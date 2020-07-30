@@ -1,12 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+//import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import App from './components/App';
+import { BrowserRouter as Router } from 'react-router-dom';
+
+render(
+<Router>
+  <App />
+</Router>, document.getElementById("root"));
+/*import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <HomePage />
   </React.StrictMode>,
   document.getElementById('root')
 );
@@ -15,3 +24,4 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+*/

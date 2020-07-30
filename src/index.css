@@ -1,3 +1,21 @@
+.custom__nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1em 0;
+  color:#777;
+}
+
+.custom__nav a{
+  padding:.75rem;
+  border-bottom:3px solid white;
+}
+
+.nav__link--active {
+  border-bottom:3px solid purple!important;
+}
+
+/*
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +29,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+*/
